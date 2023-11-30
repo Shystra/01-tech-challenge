@@ -1,0 +1,32 @@
+.menuContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100vh;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 15vh;
+
+}
+
+.menuOpen {
+    transform: translateX(0%);
+}
+
+.iconMenu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menuContainer {
+        flex-direction: row;
+    }
+
+    .iconMenu {
+        display: block;
+    }
+}

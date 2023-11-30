@@ -1,0 +1,23 @@
+:root{
+  --white: #FFF;
+  --gray-100: #F1F0FF;
+  --primary: #48409E;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', Helvetica, sans-serif;
+}
+
+body{
+  
+  background-color: var(--gray-100);
+  padding: 0;
+  /* max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; */
+  -webkit-font-smoothing: antialiased;
+
+}
