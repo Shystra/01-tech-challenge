@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from './Menu.module.css';
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import logoTaskaban from '../../assets/TASKBAN.jpg';
+import { ButtonsOptionsMenu } from '../ButtonsOptionsMenu';
 
 interface MenuProps {
     menuOpen: boolean;
@@ -51,7 +52,8 @@ export function Menu({ menuOpen, setMenuOpen }: MenuProps) {
                 {menuOpen && (
                     <img src={logoTaskaban} alt="Logo Taskaban" className={styles.logoTaskaban} />
                 )}
-                {/* Conteúdo do menu aqui */}
+
+                <ButtonsOptionsMenu />
             </div>
         </>
     );

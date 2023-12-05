@@ -1,0 +1,26 @@
+.buttonsOptionsContainer {
+    display: inline-flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: flex-start; /* Centraliza horizontalmente */
+    gap: 50px; /* Adiciona um espaço entre os itens */
+    padding: 3rem;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    border-radius: 15px;
+}
+
+.menuItem:hover {
+    background-color: #F2F2F2; 
+    border-radius: 15px;
+    width: 15vh;
+}
+
+.buttonsOptionsContainer span{
+    color: var(--third);
+    padding: 1rem;
+}
