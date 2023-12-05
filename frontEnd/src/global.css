@@ -2,6 +2,8 @@
   --white: #FFF;
   --gray-100: #F1F0FF;
   --primary: #48409E;
+  --secondary: #BFB9FF
+
 }
 
 *{
@@ -9,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Libre Franklin', Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 body{
@@ -20,4 +23,10 @@ body{
   margin-right: auto; */
   -webkit-font-smoothing: antialiased;
 
+}
+
+@media (max-width: 768px){
+  button{
+    font-size: 14px;
+  }
 }

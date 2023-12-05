@@ -1,19 +1,17 @@
-/* .header{
-    background-color: var(--primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    color: white;
-    position: relative;
-} */
 
-.header {
+.headerContainer {
     background-color: var(--primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    height: 8vh;
     color: white;
     position: relative;
-   }
+}
+
+@media screen and (max-width: 768px) {
+    .headerContainer{
+        height: 5vh;
+    }
+}

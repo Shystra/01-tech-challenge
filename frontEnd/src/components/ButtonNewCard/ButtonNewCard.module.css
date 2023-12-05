@@ -1,0 +1,41 @@
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; /* Isso alinhará o botão para o final do container */
+    padding: 10px;
+    width: 100%; /* Ocupa a largura total para permitir o alinhamento à direita */
+}
+
+
+.buttonContainer button{
+    border-radius: 10px;
+    width: 15vh;
+    height: 6vh;
+    flex-shrink: 0;
+    background-color: var(--secondary);
+    color: var(--white);
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    /* font-size: 16px; */
+
+}
+.buttonContainer button:hover{
+    background-color: black;
+    /* color: var(--white); */
+}
+
+@media (max-width: 768px){
+    .buttonContainer {
+        height: 3vh;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .buttonContainer button{
+        padding: 0;
+        width: 35%;
+        height: 4vh;
+    
+    }
+}
