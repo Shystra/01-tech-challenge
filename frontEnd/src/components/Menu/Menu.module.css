@@ -10,8 +10,10 @@
     gap: 1rem;
     flex-direction: column;
     width: 15vh;
-
+    transform: translateX(-100%); /* Menu visível em telas maiores */
+    transition: transform 0.5s ease-in-out; /* Transição suave ao carregar */
 }
+
 
 .menuOpen {
     transform: translateX(0%);
@@ -19,11 +21,45 @@
 
 .iconMenu {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
 }
 
+.closeIcon {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+
 @media screen and (max-width: 768px) {
+
     .menuContainer {
-        flex-direction: row;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-out; /* Transição para fechar */
+    }
+
+    .menuContainer.menuOpen {
+        transform: translateX(0%);
+        transition: transform 0.3s ease-in-out; /* Transição para abrir */
+    }
+
+    
+
+
+    .menuContainer .closeIcon {
+        transform: -100%;
+        opacity: 1;
+        transition: opacity 0.3s ease-out;
+    }
+
+    .menuContainer:not(.menuOpen) .closeIcon {
+        /* Faz o ícone desaparecer quando o menu está fechado */
+        opacity: 0;
     }
 
     .iconMenu {
