@@ -2,14 +2,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: var(--white);
     height: 100vh;
     list-style-type: none;
     padding: 0;
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    width: 15vh;
+    width: 20vh;
     transform: translateX(-100%); /* Menu visível em telas maiores */
     transition: transform 0.5s ease-in-out; /* Transição suave ao carregar */
 }
@@ -23,8 +23,14 @@
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -2rem;
     cursor: pointer;
+    color: black;
+    font-size: 16px;
+}
+.menuIcon{
+    /* padding: 0; */
+    font-size: 16px ;
 }
 
 .closeIcon {
@@ -32,7 +38,17 @@
     position: absolute;
     top: 0;
     right: 0;
+    font-size: 16px;
     padding: 10px;
+    color: black;
+    
+}
+
+.logoTaskaban{
+    width: 65%;
+    max-width: 150px;
+    margin: 6vh auto 0;
+    display: block;
 }
 
 
@@ -64,5 +80,11 @@
 
     .iconMenu {
         display: block;
+    }
+
+
+    .logoTaskaban{
+        width: 65%;
+        /* margin-top: 30px; */
     }
 }

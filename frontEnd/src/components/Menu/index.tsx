@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './Menu.module.css';
 import { IoMdClose, IoMdMenu } from "react-icons/io";
+import logoTaskaban from '../../assets/TASKBAN.jpg';
 
 interface MenuProps {
     menuOpen: boolean;
@@ -18,12 +19,11 @@ export function Menu({ menuOpen, setMenuOpen }: MenuProps) {
 
         window.addEventListener('resize', updateScreenSize);
 
-        // Se for uma tela maior, aplique a animação após a montagem do componente
         if (!isSmallScreen && initialLoad) {
             setTimeout(() => {
                 setMenuOpen(true);
                 setInitialLoad(false);
-            }, 300); // Ajuste o tempo de atraso conforme necessário
+            }, 300);
         }
 
         return () => {
@@ -48,9 +48,11 @@ export function Menu({ menuOpen, setMenuOpen }: MenuProps) {
                         <IoMdClose />
                     </div>
                 )}
+                {menuOpen && (
+                    <img src={logoTaskaban} alt="Logo Taskaban" className={styles.logoTaskaban} />
+                )}
+                {/* Conteúdo do menu aqui */}
             </div>
         </>
     );
 }
-
-
