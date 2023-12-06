@@ -23,4 +23,20 @@
 .buttonsOptionsContainer span{
     color: var(--third);
     padding: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .buttonsOptionsContainer {
+        margin-top: 70%;
+        width: 100%; 
+        padding: 1rem; 
+    }
+
+    .buttonsOptionsContainer span {
+
+    }
 }
