@@ -1,3 +1,4 @@
+import { InputModal } from '../../Inputs/InputModal';
 import styles from './modal.module.css';
 
 type ModalProps = {
@@ -12,8 +13,9 @@ export function Modal({isOpen, onClose, children}: ModalProps) {
     return(
         <div className={styles.modalBackdrop}>
             <div className={styles.modalContent}>
+                <h1 className={styles.titleModal}>Novo Card</h1>
                 <div className={styles.modalBody}>
-
+                    <InputModal/>
                 </div>
                 <div className={styles.buttonContainer}>
 
