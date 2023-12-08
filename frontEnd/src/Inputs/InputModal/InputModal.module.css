@@ -30,5 +30,10 @@
 }
 
 .inputFieldData{
-    width: 50%;
+    width: 30%;
+}
+
+.containerButtons{
+    display: inline-flex;
+    gap: 10px;
 }
